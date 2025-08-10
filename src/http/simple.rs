@@ -10,8 +10,8 @@ use super::{stream::stream, HttpClient};
 
 #[derive(Debug, Clone)]
 pub struct SimpleHttpClient<C: Config> {
-    pub(crate) client: reqwest::Client,
-    pub(crate) config: C,
+    pub client: reqwest::Client,
+    pub config: C,
 }
 
 #[async_trait::async_trait]
